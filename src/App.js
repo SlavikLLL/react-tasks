@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import List from "./components/List"
+function App(){
+  const definitions = [
+    { dt: 'one', dd: 'two', id: 1 },
+    { dt: 'another term', dd: 'another description', id: 2 },
+];
+return (
+  <div className="List">
+    
+    <List data={definitions} />
+    
+  </div>
+)
 }
 
 export default App;
