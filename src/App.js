@@ -1,8 +1,8 @@
 import List from "./components/List"
 function App(){
   const definitions = [
-    { dt: 'one', dd: 'two', id: 1 },
-    { dt: 'another term', dd: 'another description', id: 2 },
+    { id:1, dt: 'one', dd: 'two' },
+    { id:2,dt: 'another term', dd: 'another description'},
 ];
 return (
   <div className="List">

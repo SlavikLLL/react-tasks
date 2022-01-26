@@ -5,11 +5,19 @@ class List extends React.Component{
         const {data} = this.props;
         return (
             <dl>
-                {data.map(item=><dt key={item.dt}>{item.dt} <dd key={item.dd}>{item.dd}</dd></dt>)}
+              {data.map(item=>
+                <React.Fragment key={item.id}>
+                    <dt>{item.dt}</dt>
+                    <dd>{item.dd}</dd>
+
+                </React.Fragment>
+                )}
+                
                
                 
             </dl>
         )
+        
     }
     
 }
